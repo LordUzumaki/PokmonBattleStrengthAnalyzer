@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Pokémon Battle Strength Analyzer</title>
+
+    
+</head>
+<body>
+    <h1>Pokémon Battle Strength Analyzer</h1>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="all">All Pokémon</div>
+        <div class="tab" data-tab="top10">Top 10 Pokémon</div>
+    </div>
+
+    <div id="all" class="tab-content active">
+        <ul id="pokemon-list-all"></ul>
+    </div>
+
+    <div id="top10" class="tab-content">
+        <ul id="pokemon-list-top10"></ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
